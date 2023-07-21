@@ -78,9 +78,9 @@
       </div>
     </div>-->
     
-    <demo-life-cycle></demo-life-cycle>
-    
     <the-user-management></the-user-management>
+    
+    <demo-life-cycle></demo-life-cycle>
     
     <!--<div class="row">
       <div class="col-12 grid-margin stretch-card">
