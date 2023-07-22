@@ -26,7 +26,7 @@
 import { createNamespacedHelpers } from "vuex";
 const { mapActions } = createNamespacedHelpers("user");
 export default {
-  state() {
+  data() {
     return {
       searchName: "",
     };

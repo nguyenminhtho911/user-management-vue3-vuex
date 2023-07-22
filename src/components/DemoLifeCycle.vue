@@ -10,6 +10,7 @@
 
 <script>
 import ChildLifeCycle from "./ChildLifeCycle.vue";
+import { getAllUserApi } from "../apis/users"
 export default {
   components: { ChildLifeCycle },
   data() {
@@ -29,6 +30,12 @@ export default {
     console.log("created", this.count);
 
     this.count = 5;
+
+    // call api
+    (async () => {
+      const data = await getAllUserApi();
+      console.log({ data });
+    })();
   },
   beforeMount() {
     console.log("beforeMount", this.$refs.myInput);
